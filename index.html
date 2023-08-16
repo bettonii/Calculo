@@ -1,31 +1,55 @@
-<DOCTYPE html>
-
-<html lang="pt-br">
-
-    <html> 
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Barbearia MINIONS</title>
-<link rel="stylesheet" href="./style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="keyworlds" content="calculadora gasolina ou alcool">
+    <title>calculadora gasolina ou alcool</title>
 
+</head>
 <body>
 
-<h1>Sobre a barbearia dos MINIONS</h1>
+    <main class="container">
+     <img class="logo" src="img/logo.png" alt="logo calculadora">
+     <h1 class="title">Qual a melhor opçao</h1>
 
-<p>Localizada no coração da cidade a <strong>Barbearia Dumbin Nova Era</strong>  traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Dumbin Nova Era já é destaque na cidade e conquista novos clientes a cada dia.</p>
+     <form onsubmit="calcular(event)" class="form">
+        <label for="">alcool(preço por litro)</label>
+        <input id="alcool"
+         class="input"
+         type="number"
+         placeholder="4.90"
+         min="1"
+         step="0.01"
+         
+         >
 
-<p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+         <label for="">gasolina(preço por litro)</label>
+         <input id="gasolina"
+          class="input"
+          type="number"
+          placeholder="6.40"
+          min="1"
+          step="0.01"
+          
+          >
+    
+          <input class="button" type="submit" value="calcular">
+      
+    </form>
+         <div class="info">
+             <span class="tooltip">Veja como é feita o calculo</span>
+             <a href="#"> 
+             <img class="info-img" src="./img/info.png" alt="info">
+                     
+         </a>   
+         </div>
+         <script src="./script.js"></script>
 
-<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+    </main>
 
+
+    
 </body>
-
-<head>
-<meta>
-</head>
-
-
 </html>
